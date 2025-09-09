@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Write new chat</title>
+</head>
+<style>
+      body {
+            background-color: antiquewhite;
+            /* display: flex;
+            justify-content: center;
+            align-items: center; */
+      }
+
+      #chat-box {
+           /* border: 2px solid red; */
+           padding: 6rem;
+           display: flex;
+           flex-direction: column;   
+      }
+
+      #chat-box input {
+            border : none;
+            background-color: rgb(233, 241, 148);
+            color: black;
+            height: 2rem;
+            cursor: pointer;
+            border: 2px solid red;
+      }
+
+      #chat-box input:hover {
+            background-color: #c7f162;
+      }      
+
+      #chat-box textarea {
+            border : none;
+            background-color: rgb(233, 241, 148);
+            color: black;
+            cursor: pointer;    
+            border: 2px solid red;
+      }
+
+      #chat-box textarea:hover {
+            background-color: #c7f162;
+      }
+
+      button {
+            background-color: rgb(233, 241, 148);
+            cursor: pointer;
+            color: black;
+            padding: 20px;
+      }
+
+      button:hover {
+             background-color: #c7f162;
+      }
+
+</style>
+<body>
+      <form method="post" action="/chats">
+            <center><b><h2>Write your chat</h2></b></center>
+            <div id="chat-box">
+            <input placeholder="Sender name" name="from">
+            <br><br>
+            <textarea name="message" placeholder="Type your message here..." rows="9" cols="30"></textarea>
+            <br><br>
+            <input placeholder="Reciver name" name="to">
+            <br><br>
+            <button>Post chat</button>
+            </div>
+      </form>
+</body>
+</html>

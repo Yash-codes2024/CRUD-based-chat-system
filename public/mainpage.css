@@ -1,0 +1,61 @@
+body {
+      background-color: antiquewhite;
+}
+
+.chat {
+      background-color: rgb(118, 214, 255);
+      padding: 12px;
+      border: 2px solid rgb(255, 84, 84);
+      border-radius: 20px;
+}
+
+.edit {
+      background-color: rgba(83, 247, 247, 0.551);
+      padding: 10px;
+      cursor: pointer;
+      
+}
+
+.edit:hover {
+      border-radius: 15px;
+      background-color: aqua;
+}
+
+.delete {
+      background-color: rgba(83, 247, 247, 0.551);
+      padding: 10px;
+      cursor: pointer;
+}
+
+.delete:hover {
+      border-radius: 15px;
+      background-color: aqua;
+}
+
+#new-chat {
+      background-color: rgba(83, 247, 247, 0.551);
+      padding: 10px;
+      cursor: pointer;
+}
+
+#new-chat:hover {
+      border-radius: 15px;
+      background-color: aqua;
+      cursor: pointer;
+}
+
+@media (max-width: 600px) {
+    .chat {
+        padding: 12px;
+        border-radius: 12px;
+    }
+
+    .edit,
+    .delete {
+        padding: 8px 12px;
+    }
+
+    form {
+        width: 100%;
+    }
+}
